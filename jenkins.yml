@@ -9,6 +9,7 @@ services:
       links:
          - dnmonster
          - redis
+      network_mode: "bridge"
 
    dnmonster:
       image: amouat/dnmonster:1.0
