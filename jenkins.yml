@@ -2,8 +2,8 @@ version: '2'
 services:
    identidock:
       build: .
-      expose:
-         - "9090"
+      ports:
+         - "9090:9090"
       environment:
          ENV: PROD
       links:
